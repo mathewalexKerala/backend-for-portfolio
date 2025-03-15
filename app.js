@@ -18,7 +18,7 @@ dotenv.config({ path: "./config/config.env" });
 
 app.use(
   cors({
-    origin: ["http://localhost:5173", "http://localhost:5174"], 
+    origin: ["http://localhost:5173", "https://dashboard-for-portfolio-git-main-mathewalexkeralas-projects.vercel.app"], 
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
