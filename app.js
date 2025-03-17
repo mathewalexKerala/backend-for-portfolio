@@ -16,14 +16,14 @@ const app = express();
 dotenv.config({ path: "./config/config.env" });
 
 
-app.use(
-  cors({
-    origin: ["https://pradeepsportfolio.vercel.app","https://dashboard-for-portfolio.vercel.app"], 
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true,
-  })
-);
-
+// app.use(
+//   cors({
+//     origin: ["https://pradeepsportfolio.vercel.app","https://dashboard-for-portfolio.vercel.app"], 
+//     methods: ["GET", "POST", "PUT", "DELETE"],
+//     credentials: true,
+//   })
+// );
+app.options('*', cors())
 app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
