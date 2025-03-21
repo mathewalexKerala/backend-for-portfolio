@@ -18,10 +18,12 @@ dotenv.config({ path: "./config/config.env" });
 
 app.use(
   cors({
-    origin: ["*"], 
-    methods: ["GET", "POST", "PUT", "DELETE"]
+    origin: "https://pradeepsportfolio.vercel.app",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
   })
 );
+
 
 app.get('/home', (req, res) => {
   res.json({ message: 'Hello from the backend!' });
