@@ -24,7 +24,9 @@ app.use(
   })
 );
 
-
+app.get('/',(req,res)=>{
+  res.json({message:"you reached the backend"})
+})
 app.get('/home', (req, res) => {
   res.json({ message: 'Hello from the backend!' });
 });
