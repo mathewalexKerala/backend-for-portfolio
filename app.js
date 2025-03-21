@@ -18,7 +18,7 @@ dotenv.config({ path: "./config/config.env" });
 
 app.use(
   cors({
-    origin: "https://pradeepsportfolio.vercel.app",
+    origin: ["https://pradeepsportfolio.vercel.app"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
