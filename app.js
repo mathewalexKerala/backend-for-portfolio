@@ -18,7 +18,7 @@ dotenv.config({ path: "./config/config.env" });
 
 app.use(
   cors({
-    origin: ["https://www.esgconsultant.in","https://dashboard-for-portfolio.vercel.app"],
+    origin: ["https://www.esgconsultant.in","https://dashboard-for-portfolio.vercel.app","http://localhost:5173"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
